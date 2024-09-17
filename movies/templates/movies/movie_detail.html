@@ -1,0 +1,18 @@
+{% extends "movies/base.html" %}
+{% block content %}
+  <article class="media content-section">
+    <img class="rounded-circle article-img" src="{{ object.Image.url }}">
+    <div class="media-body">
+      <h2 class="article-title">{{ object.title }}</h2>
+      <p class="article-content">{{ object.description}}</p>
+      <p class="article-content">Ticket Price : {{ object.price}} INR</p>
+      <p class="article-content">Genre : {{ object.genre}}</p>
+      <a class="article-content" href="{% url 'bookmovie' movie.pk %}" style="font-weight:500;font-size: large; color:rgb(0, 128, 73)" >Book a Ticket!!</a>
+      <div class="article-metadata"></div>
+        <a class="mr-2" style="color:red">Runtime: {{ object.runtime }}</a>
+        <a class="mr-2" style="color:red">Rating: {{ object.rating }}</a>
+        <small class="text-muted">Release Date: {{ object.launch_date|date:"F d, Y" }}</small>
+      </div>
+    </div>
+  </article>
+{% endblock content %}
