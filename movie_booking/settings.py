@@ -155,7 +155,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'madhugoe05@gmail.com'
-EMAIL_HOST_PASSWORD = 'dmvn dctd jpae qayn'
+EMAIL_HOST_PASSWORD = '#### #### #### ####'
 '''
 
 '''AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
